@@ -1,0 +1,10 @@
+.site {
+    
+    @include container();
+    margin-left: gutter(1);
+    margin-right: gutter(1);
+
+    @include breakpoint($screen-large) {
+        @include container(1140px);
+    }
+}
