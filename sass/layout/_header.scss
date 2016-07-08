@@ -1,0 +1,13 @@
+.wrapper {
+    @include container( 1200px );
+}
+
+.site-branding {
+    @include span(4 of 12);
+}
+
+.main-navigation {
+    // @include span(8 of 12 last);
+    float: right;
+    line-height: 90px;
+}

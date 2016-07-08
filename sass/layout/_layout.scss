@@ -1,3 +1,8 @@
+$susy: (
+    columns: 12,
+    gutter-position: inside,
+    math: fluid,
+);
 @import "header";
 @import "content";
 @import "footer";
