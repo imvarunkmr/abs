@@ -11,7 +11,7 @@
  * As of WordPress 4.5+ *
  */
 function abs_setup_logo() {
-    add_theme_support( 'custom_logo' );
+    add_theme_support( 'custom-logo' );
 }
 add_action( 'after_setup_theme', 'abs_setup_logo' );
 
