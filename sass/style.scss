@@ -44,6 +44,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+// Import Susy
+@import "bower_components/susy/sass/susy";
 
 /*--------------------------------------------------------------
 # Normalize

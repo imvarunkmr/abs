@@ -1,0 +1,21 @@
+{
+  "name": "abs",
+  "description": "A better start",
+  "main": "",
+  "authors": [
+    "imvarunkmr"
+  ],
+  "license": "GPL-2.0",
+  "homepage": "https://github.com/imvarunkmr/abs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}
