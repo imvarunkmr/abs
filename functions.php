@@ -140,3 +140,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load ABS functions.
+ */
+require get_template_directory() . '/abs_functions.php';
