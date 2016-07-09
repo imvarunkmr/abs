@@ -154,4 +154,6 @@ embed,iframe,object{max-width:100%}
 .main-navigation ul{display:block;content:"";display:table;table-layout:fixed}
 }@media(min-width:1280px){.site{max-width:1140px;margin-left:auto;margin-right:auto}
 .site:after{content:" ";display:block;clear:both}
+.content-area{box-sizing:border-box;width:66.6666666667%;float:left;padding-left:.8333333333%;padding-right:.8333333333%}
+aside.widget-area{box-sizing:border-box;width:33.3333333333%;float:right;padding-left:.8333333333%;padding-right:.8333333333%}
 }
