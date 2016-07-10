@@ -1,5 +1,5 @@
 # A Better Start
-A better way to start building premium WordPress themes. 
+A better way to start building premium WordPress themes.
 
 **Based on _S**
 
@@ -11,7 +11,7 @@ Ahmad Awais has put together [a great workflow for using Gulp with WordPress](ht
 
 **Uses Susy for layouts ( Not depending on bootstrap )**
 
-Bootstrap is great when you need to create layouts based on a responsive grid. But, I needed something flexible for this theme so that I don't have to modify the HTLML markup each time I need a different layout. [Susy](http://susy.oddbird.net/) solves this problem and it helps in so many other ways.
+Bootstrap is great when you need to create quick layouts based on a responsive grid. But, I needed something flexible for this theme so that I don't have to modify the HTML markup each time I need a different layout. [Susy](http://susy.oddbird.net/) solves this problem and it helps in so many other ways.
 
 **Custom WordPress templates to start with**
 
@@ -19,4 +19,4 @@ Coming soon ..
 
 # Contributing
 
-I am building this starter theme to speed up building new themes. I see this project as a reusable theme which provides all the basic stuff and allows to add custom features and functionality according to project requirements. This is my first open source project, so kindly help me by suggesting any improvements I can make in any department. 
+I am building this starter theme to speed up building new themes. I see this project as a reusable theme which provides all the basic stuff and allows to add custom features and functionality according to project requirements. This is my first open source project, so kindly help me by suggesting any improvements I can make in any department.
