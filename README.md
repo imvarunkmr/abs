@@ -9,6 +9,8 @@ I love [_s starter theme by automattic](https://github.com/Automattic/_s). It's 
 
 Ahmad Awais has put together [a great workflow for using Gulp with WordPress](https://github.com/ahmadawais/WPGulp). I have tried to take it a step further by integrating it with _s theme to get even faster start.
 
+>Please remember to update your project name and URL in gulpfile.js
+
 **Uses Susy for layouts ( Not depending on bootstrap )**
 
 Bootstrap is great when you need to create quick layouts based on a responsive grid. But, I needed something flexible for this theme so that I don't have to modify the HTML markup each time I need a different layout. [Susy](http://susy.oddbird.net/) solves this problem and it helps in so many other ways.
