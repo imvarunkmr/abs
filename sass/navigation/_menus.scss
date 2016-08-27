@@ -78,6 +78,47 @@
 .main-navigation.toggled ul {
 	display: block;
 }
+.hamburger-line {
+	display: block;
+	position: absolute;
+	background: #000;
+	width: 35px;
+	height: 5px;
+	outline: none;
+	transition: all 500ms ease-in-out;
+}
+
+.menu-toggle {
+	position: relative;
+	@include clearfix;
+	width: 35px;
+	height: 50px;
+	padding: 0;
+	border: none;
+	background: transparent;
+	&:hover, &:active, &:focus {
+		background: transparent;
+		box-shadow: none;
+	}
+	box-shadow: none;
+	cursor: pointer;
+	outline: none;
+	margin-top: 37px;
+	span {
+		@extend .hamburger-line;
+		&:after {
+			@extend .hamburger-line;
+			content: '';
+			top: -10px;
+		}
+		&:before {
+			@extend .hamburger-line;
+			content: '';
+			bottom: -10px;
+		}
+	}
+
+}
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
