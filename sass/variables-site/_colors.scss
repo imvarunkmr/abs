@@ -1,3 +1,7 @@
+/*
+    Underscore Variables - Preserved for compatibilty with underscore.
+    Do not modify or use further
+*/
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -18,3 +22,35 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+/*
+    ABS Core Variables.
+    To modify the value of any variable,
+    redeclare the variable in custom variables section
+*/
+
+
+// Color Pallete Codes
+// $c_    Color
+// $cd_   Color for dark background
+// $cl_   Color for light background
+//
+$cd_background: darken(#34383B, 10%);
+
+$cd_accent: #A1A783;
+$cl_accent: #A1A783;
+
+$cd_text: #fff;
+$cl_text: #34383B; // Body color
+$cd_text2: #A1A1A1;
+$cl_text2: #A1A1A1;
+
+$c_alt_bg: #EAEAEA;
+
+$header-height : 8rem;
+
+
+/*
+    Custom Variables
+    Add site specific variables here or overrride any of the above variables
+*/

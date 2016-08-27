@@ -118,6 +118,13 @@ a:hover,a:active{outline:0}
 .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
+.main-navigation{-webkit-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
+.main-navigation.toggled #primary-menu{padding:3rem 0;position:absolute;width:100%;left:0;top:8rem;background:#040505}
+.main-navigation.toggled #primary-menu li{text-align:center;width:100%;line-height:4;border-bottom:1px solid black}
+.main-navigation.toggled #primary-menu li:last-child{border:0}
+.main-navigation.toggled .menu-toggle span{background-color:transparent}
+.main-navigation.toggled .menu-toggle span:before{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);bottom:0}
+.main-navigation.toggled .menu-toggle span:after{top:0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 #content[tabindex="-1"]:focus{outline:0}
