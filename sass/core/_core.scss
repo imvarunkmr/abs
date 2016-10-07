@@ -43,11 +43,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
-// Import Susy
-@import "bower_components/susy/sass/susy";
-@import "bower_components/breakpoint-sass/stylesheets/breakpoint";
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+
+$font__main: sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+// Breakpoints
+$screen-large: 1280px;
+$screen-smal: 1024px;
+
+$tablet-large: 768px;
+$tablet-smal: 480px;
+
+$mobile-large: 320px;
+$mobile-smal: 240px;
+
 
 /*--------------------------------------------------------------
 # Normalize
@@ -57,59 +93,486 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import "typography/typography";
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: $color__background-pre;
+	font-family: $font__pre;
+	@include font-size(0.9375);
+	line-height: $font__line-height-pre;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: $font__code;
+	@include font-size(0.9375);
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+
+mark, ins {
+	background: $color__background-ins;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-@import "elements/elements";
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-@import "layout/layout";
+$susy: (
+    columns: 12,
+    gutter-position: inside,
+    math: fluid,
+);
+
+.wrapper {
+    @include container( 1200px );
+}
+
+.site-branding {
+    @include span(4 of 12);
+}
+
+.main-navigation {
+    // @include span(8 of 12 last);
+    float: right;
+    line-height: 90px;
+}
+
+.site {
+
+    @include container();
+    margin-left: gutter(1);
+    margin-right: gutter(1);
+
+    @include breakpoint($screen-large) {
+        @include container(1140px);
+    }
+}
+
+.content-area {
+    @include breakpoint($screen-large) {
+        @include span(8 of 12);
+    }
+}
+
+aside.widget-area {
+    @include breakpoint($screen-large) {
+        @include span(4 of 12 last);
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import "forms/forms";
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
+	&:hover {
+		border-color: $color__border-button-hover;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+
+
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
-@import "modules/accessibility";
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		background-color: $color__background-screen;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: $color__text-screen;
+		display: block;
+		@include font-size(0.875);
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-@import "modules/alignments";
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
 
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-@import "modules/clearings";
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	@include clearfix;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	@include clearfix-after;
+}
 
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import "site/site";
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
 
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-@import "media/media";
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: 0.8075em 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+
+	.gallery-columns-2 & {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 & {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 & {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 & {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 & {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 & {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 & {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 & {
+		max-width: 11.11%;
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
