@@ -1,16 +1,12 @@
 .main-navigation {
-	// clear: both;
-	// display: block;
-	// float: left;
-	// width: 100%;
-
-
+	// First Level Menu
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 
+		// Sub Menu
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -19,6 +15,7 @@
 			left: -999em;
 			z-index: 99999;
 
+			// Sub -> Sub Menu
 			ul {
 				left: -999em;
 				top: 0;
@@ -34,15 +31,7 @@
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
+		} // End of vertical-align: sub-menu
 
 		li:hover > ul,
 		li.focus > ul {
@@ -54,10 +43,6 @@
 		float: left;
 		position: relative;
 		margin-left: 1rem;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 
 	a {
@@ -65,15 +50,10 @@
 		text-decoration: none;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
 	@include clearfix;
 }
 
-/* Small menu. */
+// Toggle State of Menu
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
