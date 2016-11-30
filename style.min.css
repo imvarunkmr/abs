@@ -1,24 +1,4 @@
-/*!
-Theme Name: abs
-Theme URI: http://varunk.co/
-Author: Varun Kumar
-Author URI: http://varunk.co
-Description: A better way to start building a new theme
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: abs
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-abs is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
@@ -95,36 +75,6 @@ input[type="text"],input[type="email"],input[type="url"],input[type="password"],
 input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus{color:#111}
 select{border:1px solid #ccc}
 textarea{width:100%}
-a{color:royalblue}
-a:visited{color:purple}
-a:hover,a:focus,a:active{color:midnightblue}
-a:focus{outline:thin dotted}
-a:hover,a:active{outline:0}
-.main-navigation{content:"";display:table;table-layout:fixed}
-.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
-.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
-.main-navigation ul ul ul{left:-999em;top:0}
-.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
-.main-navigation ul ul a{width:200px}
-.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{float:left;position:relative;margin-left:1rem}
-.main-navigation a{display:block;text-decoration:none}
-.menu-toggle,.main-navigation.toggled ul{display:block}
-.hamburger-line,.menu-toggle span,.menu-toggle span:after,.menu-toggle span:before{display:block;position:absolute;background:#000;width:35px;height:5px;outline:0;-webkit-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
-.menu-toggle{position:relative;content:"";display:table;table-layout:fixed;width:35px;height:50px;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer;outline:0;margin-top:37px}
-.menu-toggle:hover,.menu-toggle:active,.menu-toggle:focus{background:transparent;box-shadow:none}
-.menu-toggle span:after{content:'';top:-10px}
-.menu-toggle span:before{content:'';bottom:-10px}
-.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
-.comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
-.comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
-.main-navigation{-webkit-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
-.main-navigation.toggled #primary-menu{padding:3rem 0;position:absolute;width:100%;left:0;top:8rem;background:#040505}
-.main-navigation.toggled #primary-menu li{text-align:center;width:100%;line-height:4;border-bottom:1px solid black}
-.main-navigation.toggled #primary-menu li:last-child{border:0}
-.main-navigation.toggled .menu-toggle span{background-color:transparent}
-.main-navigation.toggled .menu-toggle span:before{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);bottom:0}
-.main-navigation.toggled .menu-toggle span:after{top:0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 #content[tabindex="-1"]:focus{outline:0}
@@ -162,6 +112,36 @@ embed,iframe,object{max-width:100%}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
+a{color:#565656}
+a:visited{color:#565656}
+a:hover{color:#3d3d3d}
+a:focus{color:#565656}
+html,body{overflow-x:hidden}
+.main-navigation{content:"";display:table;table-layout:fixed}
+.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
+.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
+.main-navigation ul ul ul{left:-999em;top:0}
+.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
+.main-navigation ul ul a{width:200px}
+.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
+.main-navigation li{float:left;position:relative;margin-left:1rem}
+.main-navigation a{display:block;text-decoration:none}
+.menu-toggle,.main-navigation.toggled ul{display:block}
+.hamburger-line,.menu-toggle span,.menu-toggle span:after,.menu-toggle span:before{display:block;position:absolute;background:#000;width:35px;height:5px;outline:0;-webkit-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
+.menu-toggle{position:relative;content:"";display:table;table-layout:fixed;width:35px;height:50px;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer;outline:0;margin-top:37px}
+.menu-toggle:hover,.menu-toggle:active,.menu-toggle:focus{background:transparent;box-shadow:none}
+.menu-toggle span:after{content:'';top:-10px}
+.menu-toggle span:before{content:'';bottom:-10px}
+.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
+.comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
+.comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
+.main-navigation{-webkit-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
+.main-navigation.toggled #primary-menu{padding:3rem 0;position:absolute;width:100%;left:0;top:8rem;background:#040505}
+.main-navigation.toggled #primary-menu li{text-align:center;width:100%;line-height:4;border-bottom:1px solid black}
+.main-navigation.toggled #primary-menu li:last-child{border:0}
+.main-navigation.toggled .menu-toggle span{background-color:transparent}
+.main-navigation.toggled .menu-toggle span:before{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);bottom:0}
+.main-navigation.toggled .menu-toggle span:after{top:0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block;content:"";display:table;table-layout:fixed}
 }@media(min-width:1280px){.site{max-width:1140px;margin-left:auto;margin-right:auto}

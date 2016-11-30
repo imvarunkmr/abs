@@ -1,7 +1,12 @@
-@import 'settings/settings';
-@import 'utilities/utilities';
+@import "bower_components/susy/sass/susy";
+@import "bower_components/breakpoint-sass/stylesheets/breakpoint";
 
+@import 'core/core_variables';
+@import 'core/core_mixins';
 @import 'core/core';
-@import 'layouts/layouts';
+
+@import 'custom/variables';
+@import 'custom/mixins';
+
 @import 'custom/custom';
 

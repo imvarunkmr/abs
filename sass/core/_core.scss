@@ -1,5 +1,5 @@
-/*!
-Theme Name: abs
+/*
+Theme Name: ABS
 Theme URI: http://varunk.co/
 Author: Varun Kumar
 Author URI: http://varunk.co
@@ -576,3 +576,24 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+a {
+	color: $link-color;
+
+	&:visited {
+		color: $link-color;
+	}
+	&:hover {
+		color: darken($link-color, 10%);
+	}
+	&:focus {
+		color: $link-color;
+	}
+}
+
+// Fix for overflow on bleed
+html, body {
+	overflow-x: hidden;
+}
+
+@import "basic_navigation";
