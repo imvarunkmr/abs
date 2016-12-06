@@ -115,7 +115,7 @@ function abs_scripts() {
 	}
 
 	// Add main.js file
-	wp_enqueue_script( 'abs-main', get_template_directory_uri() . '/js/main.js', array(), '', true );
+	wp_enqueue_script( 'abs-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'abs_scripts' );
 
