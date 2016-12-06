@@ -1,3 +1,6 @@
+.hor-list{list-style:none;content:"";display:table;table-layout:fixed}
+.hor-list li{display:block;float:left}
+.clearfix{clear:both}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
