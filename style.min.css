@@ -136,6 +136,11 @@ html,body{overflow-x:hidden}
 .main-navigation.toggled .menu-toggle span{background-color:transparent}
 .main-navigation.toggled .menu-toggle span:before{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);bottom:0}
 .main-navigation.toggled .menu-toggle span:after{top:0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+ul.tabs{margin:0;padding:0;list-style:none}
+ul.tabs li{background:0;display:inline-block;padding:10px 15px;cursor:pointer;border:1px solid #dedede;border-bottom:0}
+ul.tabs li.current{background:#dedede;color:#222}
+.tab-content{display:none;border:1px solid #dedede;padding:15px}
+.tab-content.current{display:inherit}
 .wrapper{max-width:1200px;margin-left:auto;margin-right:auto}
 .wrapper:after{content:" ";display:block;clear:both}
 .site-branding{box-sizing:border-box;width:33.3333333333%;float:left;padding-left:.8333333333%;padding-right:.8333333333%}
