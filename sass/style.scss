@@ -2,11 +2,10 @@
 @import "bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 @import 'core/core_variables';
-@import 'core/core_mixins';
-@import 'core/core';
-
 @import 'custom/variables';
+@import 'core/core_mixins';
 @import 'custom/mixins';
 
+@import 'core/core';
 @import 'custom/custom';
 
