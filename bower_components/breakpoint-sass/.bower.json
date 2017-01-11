@@ -16,15 +16,14 @@
     "sassy-maps": "<1.0.0"
   },
   "homepage": "https://github.com/Team-Sass/breakpoint",
-  "version": "2.7.0",
-  "_release": "2.7.0",
+  "version": "2.7.1",
+  "_release": "2.7.1",
   "_resolution": {
     "type": "version",
-    "tag": "v2.7.0",
-    "commit": "935eef3ac47ecfb1de9190ca634fbd2fbd74f66b"
+    "tag": "v2.7.1",
+    "commit": "15f3125da9b68d0c73a10f53baa8a5f21d92aab6"
   },
   "_source": "https://github.com/Team-Sass/breakpoint.git",
   "_target": "^2.7.0",
-  "_originalSource": "breakpoint-sass",
-  "_direct": true
+  "_originalSource": "breakpoint-sass"
 }
