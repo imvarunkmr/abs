@@ -1,0 +1,426 @@
+$susy: (
+    columns: 12,
+    gutter-position: inside,
+    math: fluid,
+);
+
+// Default susy grid columns.
+// Feel free to reduce this number however if you need to increase the number of columns you will have to manually add the placeholders in all media queries
+$grid-columns: 12;
+
+// These are default breakpoints. Feel free to adjust as per your requirements
+// Again if you want to add a breakpoint, you will have to write code manually for your new breakpoint
+$phone-only:             'max-width: 599px';
+$tablet-portrait-up:     'min-width: 600px';
+$tablet-landscape-up:    'min-width: 900px';
+$desktop-up:             'min-width: 1200px';
+$big-desktop-up:         'min-width: 1800px';
+
+// Container settings
+%container {
+    @include container();
+    margin-left: gutter(1);
+    margin-right: gutter(1);
+    
+    @media( $desktop-up ) {
+        @include container(1140px);
+    }
+}
+
+
+// For phones
+@media ($phone-only) {
+
+  %span1-phone-only {
+    @include span( 1 of $grid-columns );
+  }
+  %span2-phone-only {
+    @include span( 2 of $grid-columns );
+  }
+  %span3-phone-only {
+    @include span( 3 of $grid-columns );
+  }
+  %span4-phone-only {
+    @include span( 4 of $grid-columns );
+  }
+  %span5-phone-only {
+    @include span( 5 of $grid-columns );
+  }
+  %span6-phone-only {
+    @include span( 6 of $grid-columns );
+  }
+  %span7-phone-only {
+    @include span( 7 of $grid-columns );
+  }
+  %span8-phone-only {
+    @include span( 8 of $grid-columns );
+  }
+  %span9-phone-only {
+    @include span( 9 of $grid-columns );
+  }
+  %span10-phone-only {
+    @include span( 10 of $grid-columns );
+  }
+  %span11-phone-only {
+    @include span( 11 of $grid-columns );
+  }
+  %span12-phone-only {
+    @include span( 12 of $grid-columns );
+  }
+
+  // 'last' keyword version
+  %span1-phone-only-last {
+    @include span( 1 of $grid-columns last );
+  }
+  %span2-phone-only-last {
+    @include span( 2 of $grid-columns last );
+  }
+  %span3-phone-only-last {
+    @include span( 3 of $grid-columns last );
+  }
+  %span4-phone-only-last {
+    @include span( 4 of $grid-columns last );
+  }
+  %span5-phone-only-last {
+    @include span( 5 of $grid-columns last );
+  }
+  %span6-phone-only-last {
+    @include span( 6 of $grid-columns last );
+  }
+  %span7-phone-only-last {
+    @include span( 7 of $grid-columns last );
+  }
+  %span8-phone-only-last {
+    @include span( 8 of $grid-columns last );
+  }
+  %span9-phone-only-last {
+    @include span( 9 of $grid-columns last);
+  }
+  %span10-phone-only-last {
+    @include span( 10 of $grid-columns last );
+  }
+  %span11-phone-only-last {
+    @include span( 11 of $grid-columns last );
+  }
+  %span12-phone-only-last {
+    @include span( 12 of $grid-columns last );
+  }
+}
+
+
+// For tablet-portrait-up
+@media ($tablet-portrait-up) {
+
+  %span1-tablet-portrait-up {
+    @include span( 1 of $grid-columns );
+  }
+  %span2-tablet-portrait-up {
+    @include span( 2 of $grid-columns );
+  }
+  %span3-tablet-portrait-up {
+    @include span( 3 of $grid-columns );
+  }
+  %span4-tablet-portrait-up {
+    @include span( 4 of $grid-columns );
+  }
+  %span5-tablet-portrait-up {
+    @include span( 5 of $grid-columns );
+  }
+  %span6-tablet-portrait-up {
+    @include span( 6 of $grid-columns );
+  }
+  %span7-tablet-portrait-up {
+    @include span( 7 of $grid-columns );
+  }
+  %span8-tablet-portrait-up {
+    @include span( 8 of $grid-columns );
+  }
+  %span9-tablet-portrait-up {
+    @include span( 9 of $grid-columns );
+  }
+  %span10-tablet-portrait-up {
+    @include span( 10 of $grid-columns );
+  }
+  %span11-tablet-portrait-up {
+    @include span( 11 of $grid-columns );
+  }
+  %span12-tablet-portrait-up {
+    @include span( 12 of $grid-columns );
+  }
+
+  // 'last' keyword version
+  %span1-tablet-portrait-up-last {
+    @include span( 1 of $grid-columns last );
+  }
+  %span2-tablet-portrait-up-last {
+    @include span( 2 of $grid-columns last );
+  }
+  %span3-tablet-portrait-up-last {
+    @include span( 3 of $grid-columns last );
+  }
+  %span4-tablet-portrait-up-last {
+    @include span( 4 of $grid-columns last );
+  }
+  %span5-tablet-portrait-up-last {
+    @include span( 5 of $grid-columns last );
+  }
+  %span6-tablet-portrait-up-last {
+    @include span( 6 of $grid-columns last );
+  }
+  %span7-tablet-portrait-up-last {
+    @include span( 7 of $grid-columns last );
+  }
+  %span8-tablet-portrait-up-last {
+    @include span( 8 of $grid-columns last );
+  }
+  %span9-tablet-portrait-up-last {
+    @include span( 9 of $grid-columns last);
+  }
+  %span10-tablet-portrait-up-last {
+    @include span( 10 of $grid-columns last );
+  }
+  %span11-tablet-portrait-up-last {
+    @include span( 11 of $grid-columns last );
+  }
+  %span12-tablet-portrait-up-last {
+    @include span( 12 of $grid-columns last );
+  }
+}
+
+
+// For tablet-landscape-up
+@media ($tablet-landscape-up) {
+
+  %span1-tablet-landscape-up {
+    @include span( 1 of $grid-columns );
+  }
+  %span2-tablet-landscape-up {
+    @include span( 2 of $grid-columns );
+  }
+  %span3-tablet-landscape-up {
+    @include span( 3 of $grid-columns );
+  }
+  %span4-tablet-landscape-up {
+    @include span( 4 of $grid-columns );
+  }
+  %span5-tablet-landscape-up {
+    @include span( 5 of $grid-columns );
+  }
+  %span6-tablet-landscape-up {
+    @include span( 6 of $grid-columns );
+  }
+  %span7-tablet-landscape-up {
+    @include span( 7 of $grid-columns );
+  }
+  %span8-tablet-landscape-up {
+    @include span( 8 of $grid-columns );
+  }
+  %span9-tablet-landscape-up {
+    @include span( 9 of $grid-columns );
+  }
+  %span10-tablet-landscape-up {
+    @include span( 10 of $grid-columns );
+  }
+  %span11-tablet-landscape-up {
+    @include span( 11 of $grid-columns );
+  }
+  %span12-tablet-landscape-up {
+    @include span( 12 of $grid-columns );
+  }
+
+  // 'last' keyword version
+  %span1-tablet-landscape-up-last {
+    @include span( 1 of $grid-columns last );
+  }
+  %span2-tablet-landscape-up-last {
+    @include span( 2 of $grid-columns last );
+  }
+  %span3-tablet-landscape-up-last {
+    @include span( 3 of $grid-columns last );
+  }
+  %span4-tablet-landscape-up-last {
+    @include span( 4 of $grid-columns last );
+  }
+  %span5-tablet-landscape-up-last {
+    @include span( 5 of $grid-columns last );
+  }
+  %span6-tablet-landscape-up-last {
+    @include span( 6 of $grid-columns last );
+  }
+  %span7-tablet-landscape-up-last {
+    @include span( 7 of $grid-columns last );
+  }
+  %span8-tablet-landscape-up-last {
+    @include span( 8 of $grid-columns last );
+  }
+  %span9-tablet-landscape-up-last {
+    @include span( 9 of $grid-columns last);
+  }
+  %span10-tablet-landscape-up-last {
+    @include span( 10 of $grid-columns last );
+  }
+  %span11-tablet-landscape-up-last {
+    @include span( 11 of $grid-columns last );
+  }
+  %span12-tablet-landscape-up-last {
+    @include span( 12 of $grid-columns last );
+  }
+}
+
+// For desktop-up
+@media ($desktop-up) {
+
+  %span1-desktop-up {
+    @include span( 1 of $grid-columns );
+  }
+  %span2-desktop-up {
+    @include span( 2 of $grid-columns );
+  }
+  %span3-desktop-up {
+    @include span( 3 of $grid-columns );
+  }
+  %span4-desktop-up {
+    @include span( 4 of $grid-columns );
+  }
+  %span5-desktop-up {
+    @include span( 5 of $grid-columns );
+  }
+  %span6-desktop-up {
+    @include span( 6 of $grid-columns );
+  }
+  %span7-desktop-up {
+    @include span( 7 of $grid-columns );
+  }
+  %span8-desktop-up {
+    @include span( 8 of $grid-columns );
+  }
+  %span9-desktop-up {
+    @include span( 9 of $grid-columns );
+  }
+  %span10-desktop-up {
+    @include span( 10 of $grid-columns );
+  }
+  %span11-desktop-up {
+    @include span( 11 of $grid-columns );
+  }
+  %span12-desktop-up {
+    @include span( 12 of $grid-columns );
+  }
+
+  // 'last' keyword version
+  %span1-desktop-up-last {
+    @include span( 1 of $grid-columns last );
+  }
+  %span2-desktop-up-last {
+    @include span( 2 of $grid-columns last );
+  }
+  %span3-desktop-up-last {
+    @include span( 3 of $grid-columns last );
+  }
+  %span4-desktop-up-last {
+    @include span( 4 of $grid-columns last );
+  }
+  %span5-desktop-up-last {
+    @include span( 5 of $grid-columns last );
+  }
+  %span6-desktop-up-last {
+    @include span( 6 of $grid-columns last );
+  }
+  %span7-desktop-up-last {
+    @include span( 7 of $grid-columns last );
+  }
+  %span8-desktop-up-last {
+    @include span( 8 of $grid-columns last );
+  }
+  %span9-desktop-up-last {
+    @include span( 9 of $grid-columns last);
+  }
+  %span10-desktop-up-last {
+    @include span( 10 of $grid-columns last );
+  }
+  %span11-desktop-up-last {
+    @include span( 11 of $grid-columns last );
+  }
+  %span12-desktop-up-last {
+    @include span( 12 of $grid-columns last );
+  }
+}
+
+// For big-desktop-up
+@media ($big-desktop-up) {
+
+  %span1-big-desktop-up {
+    @include span( 1 of $grid-columns );
+  }
+  %span2-big-desktop-up {
+    @include span( 2 of $grid-columns );
+  }
+  %span3-big-desktop-up {
+    @include span( 3 of $grid-columns );
+  }
+  %span4-big-desktop-up {
+    @include span( 4 of $grid-columns );
+  }
+  %span5-big-desktop-up {
+    @include span( 5 of $grid-columns );
+  }
+  %span6-big-desktop-up {
+    @include span( 6 of $grid-columns );
+  }
+  %span7-big-desktop-up {
+    @include span( 7 of $grid-columns );
+  }
+  %span8-big-desktop-up {
+    @include span( 8 of $grid-columns );
+  }
+  %span9-big-desktop-up {
+    @include span( 9 of $grid-columns );
+  }
+  %span10-big-desktop-up {
+    @include span( 10 of $grid-columns );
+  }
+  %span11-big-desktop-up {
+    @include span( 11 of $grid-columns );
+  }
+  %span12-big-desktop-up {
+    @include span( 12 of $grid-columns );
+  }
+
+  // 'last' keyword version
+  %span1-big-desktop-up-last {
+    @include span( 1 of $grid-columns last );
+  }
+  %span2-big-desktop-up-last {
+    @include span( 2 of $grid-columns last );
+  }
+  %span3-big-desktop-up-last {
+    @include span( 3 of $grid-columns last );
+  }
+  %span4-big-desktop-up-last {
+    @include span( 4 of $grid-columns last );
+  }
+  %span5-big-desktop-up-last {
+    @include span( 5 of $grid-columns last );
+  }
+  %span6-big-desktop-up-last {
+    @include span( 6 of $grid-columns last );
+  }
+  %span7-big-desktop-up-last {
+    @include span( 7 of $grid-columns last );
+  }
+  %span8-big-desktop-up-last {
+    @include span( 8 of $grid-columns last );
+  }
+  %span9-big-desktop-up-last {
+    @include span( 9 of $grid-columns last);
+  }
+  %span10-big-desktop-up-last {
+    @include span( 10 of $grid-columns last );
+  }
+  %span11-big-desktop-up-last {
+    @include span( 11 of $grid-columns last );
+  }
+  %span12-big-desktop-up-last {
+    @include span( 12 of $grid-columns last );
+  }
+}

@@ -141,16 +141,6 @@ ul.tabs li{background:0;display:inline-block;padding:10px 15px;cursor:pointer;bo
 ul.tabs li.current{background:#dedede;color:#222}
 .tab-content{display:none;border:1px solid #dedede;padding:15px}
 .tab-content.current{display:inherit}
-.wrapper{max-width:1200px;margin-left:auto;margin-right:auto}
-.wrapper:after{content:" ";display:block;clear:both}
-.site-branding{box-sizing:border-box;width:33.3333333333%;float:left;padding-left:.8333333333%;padding-right:.8333333333%}
-.main-navigation{float:right;line-height:90px}
-.site{max-width:100%;margin-left:auto;margin-right:auto;margin-left:10%;margin-right:10%}
-.site:after{content:" ";display:block;clear:both}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block;content:"";display:table;table-layout:fixed}
-}@media(min-width:1280px){.site{max-width:1140px;margin-left:auto;margin-right:auto}
-.site:after{content:" ";display:block;clear:both}
-.content-area{box-sizing:border-box;width:66.6666666667%;float:left;padding-left:.8333333333%;padding-right:.8333333333%}
-aside.widget-area{box-sizing:border-box;width:33.3333333333%;float:right;padding-left:.8333333333%;padding-right:.8333333333%}
 }
