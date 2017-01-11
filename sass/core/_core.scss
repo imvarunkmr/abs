@@ -1,7 +1,8 @@
 @import "bower_components/susy/sass/susy";
-@import 'susy_boot';
 
+@import '../config/susy_boot';
 @import '../config/variables';
+@import '../config/placeholders';
 @import '../config/mixins';
 @import "../config/theme_header";
 
