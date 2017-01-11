@@ -285,7 +285,7 @@ textarea {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-	@include clearfix-after;
+	clear: both;
 }
 
 /*--------------------------------------------------------------
