@@ -1,5 +1,13 @@
+// Importing default items from library
+// You can choose your own items or even create new ones in library for future use
+// Not all files in the library are compiled to the final CSS. Only the files you import below will.
+@import "../library/headers/header_default";
+@import "../library/content/content_default";
+@import "../library/sidebars/sidebar_default";
+@import "../library/footers/footer_default";
 
-// Add additional files in custom folder as per project demands
-// call those files in this handler using import directive and you are done
 
+// This is the custom styles.scss partial which you can use to write custom project only code
 @import "styles";
+
+// TIP: Keep adding custom partials as per project requirements below
