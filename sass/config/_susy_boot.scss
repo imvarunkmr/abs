@@ -21,12 +21,11 @@ $big-desktop-up:         'min-width: 1800px';
     @include container();
     margin-left: gutter(1);
     margin-right: gutter(1);
-    
+
     @media( $desktop-up ) {
         @include container(1140px);
     }
 }
-
 
 // For phones
 @media ($phone-only) {

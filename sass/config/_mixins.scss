@@ -3,7 +3,6 @@
 	font-size: $sizeValue * 1rem;
 }
 
-
 @mixin clearfix {
     &:after {
         content: " ";
@@ -17,20 +16,23 @@
 
 // Please note the variables used in below mixins are available
 // in config/susy_boot.scss file instead of regular config/_variables.scss
-//
 
 @mixin for-phone-only {
   @media (max-width: $phone-only) { @content; }
 }
+
 @mixin for-tablet-portrait-up {
   @media (min-width: $tablet-portrait-up) { @content; }
 }
+
 @mixin for-tablet-landscape-up {
   @media (min-width: $tablet-landscape-up) { @content; }
 }
+
 @mixin for-desktop-up {
   @media (min-width: $desktop-up) { @content; }
 }
+
 @mixin for-big-desktop-up {
   @media (min-width: $big-desktop-up) { @content; }
 }
