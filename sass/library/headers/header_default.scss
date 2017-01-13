@@ -1,0 +1,14 @@
+.site-header {
+    @include bleed-x(99em);
+    @extend %clearfix;
+    background: $primary-color;
+    padding-top: 20px;
+}
+
+.site-branding {
+    float: left;
+}
+
+.main-navigation {
+    float: right;
+}
