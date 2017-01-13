@@ -27,6 +27,11 @@ $big-desktop-up:         'min-width: 1800px';
     }
 }
 
+// Just a handy helper class
+.container {
+    @extend %container;
+}
+
 // For phones
 @media ($phone-only) {
 
