@@ -1,0 +1,11 @@
+.site-footer {
+    @include bleed-x(99em);
+    @extend %clearfix;
+    background: $primary-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.site-info {
+    text-align: center;
+}

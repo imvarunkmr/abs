@@ -1,6 +1,6 @@
 .container{max-width:100%;margin-left:auto;margin-right:auto;margin-left:10%;margin-right:10%}
 .container:after{content:" ";display:block;clear:both}
-.site-header:after{content:" ";display:table;clear:both}
+.site-header:after,.site-footer:after{content:" ";display:table;clear:both}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
@@ -143,6 +143,8 @@ ul.tabs li.current{background:#dedede;color:#222}
 .site-header{margin-right:-99em;margin-left:-99em;padding-right:99em;padding-left:99em;background:#dedede;padding-top:20px}
 .site-branding{float:left}
 .main-navigation{float:right}
+.site-footer{margin-right:-99em;margin-left:-99em;padding-right:99em;padding-left:99em;background:#dedede;padding-top:10px;padding-bottom:10px}
+.site-info{text-align:center}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 .main-navigation ul:after{content:" ";display:table;clear:both}
