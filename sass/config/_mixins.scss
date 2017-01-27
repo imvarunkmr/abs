@@ -18,21 +18,21 @@
 // in config/susy_boot.scss file instead of regular config/_variables.scss
 
 @mixin for-phone-only {
-  @media (max-width: $phone-only) { @content; }
+  @media ($phone-only) { @content; }
 }
 
 @mixin for-tablet-portrait-up {
-  @media (min-width: $tablet-portrait-up) { @content; }
+  @media ($tablet-portrait-up) { @content; }
 }
 
 @mixin for-tablet-landscape-up {
-  @media (min-width: $tablet-landscape-up) { @content; }
+  @media ($tablet-landscape-up) { @content; }
 }
 
 @mixin for-desktop-up {
-  @media (min-width: $desktop-up) { @content; }
+  @media ($desktop-up) { @content; }
 }
 
 @mixin for-big-desktop-up {
-  @media (min-width: $big-desktop-up) { @content; }
+  @media ($big-desktop-up) { @content; }
 }
