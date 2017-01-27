@@ -120,7 +120,7 @@ html,body{overflow-x:hidden}
 .main-navigation:after{content:" ";display:table;clear:both}
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .hamburger-line,.menu-toggle span,.menu-toggle span:after,.menu-toggle span:before{display:block;position:absolute;background:#000;width:35px;height:5px;outline:0;-webkit-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
-.menu-toggle{position:relative;width:35px;height:50px;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer;outline:0;margin-top:37px}
+.menu-toggle{position:relative;width:35px;height:50px;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer;outline:0;margin-top:5px}
 .menu-toggle:after{content:" ";display:table;clear:both}
 .menu-toggle:hover,.menu-toggle:active,.menu-toggle:focus{background:transparent;box-shadow:none}
 .menu-toggle span:after{content:'';top:-10px}
