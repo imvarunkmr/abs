@@ -100,7 +100,7 @@
 
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: $toggle-breakpoint) {
 	.menu-toggle {
 		display: none;
 	}
